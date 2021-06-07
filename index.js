@@ -9,7 +9,7 @@ function updateTime() {
     let minute = now.getUTCMinutes()+20
     let second = now.getUTCSeconds()
 
-    let postfix = "am";
+    let postfix = "AM";
 
     if (minute>=60) {
         minute = minute-60
@@ -20,7 +20,7 @@ function updateTime() {
         hour-24
     }
     if (hour>=12) {
-        postfix = "pm"
+        postfix = "PM"
         if (hour>12) {
             hour-=12
         }
